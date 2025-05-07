@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Lost and Found</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function togglePassword() {
+      const passwordField = document.getElementById("password");
+      const type = passwordField.type === "password" ? "text" : "password";
+      passwordField.type = type;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Lost and Found System</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="report.html">Report</a></li>
+      <li><a href="search.html">Search</a></li>
+       <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <label style="text-align: left; font-size: 14px;">
+        <input type="checkbox" onclick="togglePassword()"> Show Password
+      </label>
+
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+  </div>
+</body>
+</html>

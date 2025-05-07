@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Item - Lost and Found</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Report Lost or Found Item</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="report.html">Report</a></li>
+      <li><a href="search.html">Search</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <form>
+      <label for="type">Type:</label>
+      <select id="type" name="type" required>
+        <option value="lost">Lost</option>
+        <option value="found">Found</option>
+      </select><br><br>
+
+      <label for="item_name">Item Name:</label>
+      <input type="text" id="item_name" name="item_name" placeholder="e.g. Black Wallet" required><br><br>
+
+      <label for="description">Description:</label><br>
+      <textarea id="description" name="description" rows="4" cols="50" placeholder="Describe the item..." required></textarea><br><br>
+
+      <label for="date">Date Lost/Found:</label>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" placeholder="Where was it lost or found?" required><br><br>
+
+      <label for="contact">Your Contact Info:</label>
+      <input type="text" id="contact" name="contact" placeholder="Phone or email" required><br><br>
+
+      <button type="submit">Submit Report</button>
+    </form>
+  </main>
+</body>
+</html>
